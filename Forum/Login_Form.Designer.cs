@@ -69,6 +69,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "регистрация";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label4
             // 
@@ -108,6 +109,7 @@
             // textPassword
             // 
             this.textPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.textPassword.Font = new System.Drawing.Font("Furore", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textPassword.Location = new System.Drawing.Point(329, 52);
             this.textPassword.Multiline = true;
             this.textPassword.Name = "textPassword";
@@ -140,12 +142,14 @@
             // textLogin
             // 
             this.textLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.textLogin.Font = new System.Drawing.Font("Furore", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textLogin.Location = new System.Drawing.Point(329, 52);
             this.textLogin.Multiline = true;
             this.textLogin.Name = "textLogin";
             this.textLogin.Size = new System.Drawing.Size(170, 30);
             this.textLogin.TabIndex = 1;
             this.textLogin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textLogin.TextChanged += new System.EventHandler(this.textLogin_TextChanged);
             // 
             // label2
             // 
@@ -192,7 +196,8 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Login_Form";
-            this.Text = "Form1";
+            this.Text = "Авторизация";
+            this.Load += new System.EventHandler(this.Login_Form_Load);
             this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
